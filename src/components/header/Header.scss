@@ -24,4 +24,12 @@
   a {
     text-decoration: none;
   }
+
+  .header-wrap {
+    & {
+      div {
+        margin-left: 20px;
+      }
+    }
+  }
 }

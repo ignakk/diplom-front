@@ -5,6 +5,10 @@ class BlogService {
         return api.get(`/article?page=${page}&orderBy=${filters.order}&filterBy=${filters.filter}`);
     }
 
+    async showArticlestoModerate() {
+        return api.get('/articles-to-moderate');
+    }
+
     async create(title, text, avatar) {
         return api.post("/create", {title, text, avatar})
     }

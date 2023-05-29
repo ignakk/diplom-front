@@ -1,5 +1,6 @@
 const initialState = {
     isAuth: false ,
+    isAdmin: false,
     error: null,
 }
 
@@ -8,6 +9,7 @@ const userReducer = (state = initialState, action) => {
         case "SET_AUTH":
             return {
                 ...state,
+                isAdmin: action.payload,
                 isAuth: true
             }
             break;

@@ -36,15 +36,17 @@ export const registration = (email, password) => async (dispatch) => {
 export const refresh = () => async (dispatch) => {
     const res = await BlogService.refresh();
     if(res.status === 200) {
-        dispatch(setAuth());
+        console.log({res});
+        dispatch(setAuth(res.data.user.isAdmin));
         localStorage.setItem("token", res.data.accesToken)
     } else {
         alert(res.data)
     }
 }
 
-export const setAuth = () => ({
-    type: "SET_AUTH"
+export const setAuth = (isAdmin) => ({
+    type: "SET_AUTH",
+    payload: isAdmin
 })
 
 export const showErrors = (error) => ({
