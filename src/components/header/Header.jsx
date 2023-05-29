@@ -19,6 +19,13 @@ export default React.memo(function Header({ isAuth }) {
             </Link>
           </div>
         )}
+
+        <div className="header__inner-createarticle">
+            <Link to="/auth">
+              <Button className="header__inner-btn">Войти</Button>
+            </Link>
+        </div>
+
       </div>
     </header>
   );

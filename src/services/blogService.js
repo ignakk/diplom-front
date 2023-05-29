@@ -26,9 +26,13 @@ class BlogService {
     }
 
     async authorization(email, password) {
-        return api.post("/authorization-by-admin", {email, password});
+        return api.post("/authorization", {email, password});
     }
 
+    async registration(email, passowrd) {
+        return api.post('/registration', {email, password: passowrd});
+    }
+    
     async refresh() {
         return api.get("/refresh");
     }

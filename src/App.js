@@ -7,7 +7,7 @@ import { refresh } from "./redux/actions/userActions.js";
 import "./styles/App.scss";
 
 import { Header, NotFound, Footer } from "./components";
-import { CreateArticle, EditArticle, BlogFullText, BlogWrapper, AdminAuth } from "./modules";
+import { CreateArticle, EditArticle, BlogFullText, BlogWrapper, AdminAuth, RegisterAuth } from "./modules";
  
 
 function App() {
@@ -34,7 +34,8 @@ function App() {
           <Route exact path="/change/:id">{isAuth === true ? <EditArticle /> : <NotFound />}</Route>
           <Route exact path="/create">{isAuth === true ? <CreateArticle /> : <NotFound />}</Route>
           <Route exact path="/articles/:id"><BlogFullText /></Route>
-          <Route exact path="/authorization-by-admin"><AdminAuth /></Route>
+          <Route exact path="/auth"><AdminAuth /></Route>
+          <Route exact path="/register"><RegisterAuth /></Route>
           <Route component={NotFound} />
         </Switch>
         <Footer />

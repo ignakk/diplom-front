@@ -9,7 +9,7 @@ import './index.scss';
 
 ReactDOM.render(
     <Provider store={store}>
-      <Router>
+      <Router basename='diplom'>
         <App />
       </Router>
     </Provider>,

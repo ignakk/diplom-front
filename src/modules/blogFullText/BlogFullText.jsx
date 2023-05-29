@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 import { format } from 'date-fns';
 import ReactMarkdown from 'react-markdown';
@@ -18,7 +18,7 @@ import eyeIcon from '../../assets/img/eye-icon.svg';
 function BlogFullText() {
   const dispatch = useDispatch();
 
-  const id = getIdByUrl(window.location.href);
+  const {id} = useParams();
 
   React.useEffect(() => {
     dispatch(setErrorClear());
