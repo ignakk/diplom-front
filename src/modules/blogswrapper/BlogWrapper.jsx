@@ -95,7 +95,7 @@ function BlogWrapper({ isAuth }) {
           </div>
         )}
       </div>
-      <div className="blog-pagination">
+      <div style={{marginBottom: '150px'}} className="blog-pagination">
         <div className="blog-wrapper__loadmorebtn">
           {page === 1 ? (
             <div></div>

@@ -5,7 +5,6 @@ import { useDispatch } from 'react-redux';
 import { deleteArticle, getAllArticles } from '../../redux/actions/blogActions.js';
 
 import './BlogItem.scss';
-import { AdminView } from '../../App.js';
 
 export default React.memo(function BlogItem({ _id, title, text, avatar, isAuth }) {
   const dispatch = useDispatch();
@@ -44,20 +43,20 @@ export default React.memo(function BlogItem({ _id, title, text, avatar, isAuth }
               Подробнее...
             </Link>
           </div>
-          <AdminView>
-            {isAuth === true && (
-              <div className="article__edit-edit">
-                <Link className="article__edit-change" to={`/change/${_id}`}>
-                  Изменить
-                </Link>
-                <button onClick={() => removeArticle(_id)} className="article__edit-delete">
-                  Удалить
-                </button>
-              </div>
-            )}
-          </AdminView>
+          {isAuth === true && (
+            <div className="article__edit-edit">
+              <Link className="article__edit-change" to={`/change/${_id}`}>
+                Изменить
+              </Link>
+              <button onClick={() => removeArticle(_id)} className="article__edit-delete">
+                Удалить
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </div>
   );
 });
+
+// export default BlogItem;

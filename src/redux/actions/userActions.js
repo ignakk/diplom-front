@@ -24,7 +24,7 @@ export const registration = (email, password) => async (dispatch) => {
             dispatch(setAuth());
             dispatch(showErrors(null));
             localStorage.setItem("token", res.data.accesToken);
-            window.location.href = "/"
+            window.location.href = "/auth"
         } else {
             throw new Error("Произошла ошибка при регистрации");
         }
@@ -36,7 +36,6 @@ export const registration = (email, password) => async (dispatch) => {
 export const refresh = () => async (dispatch) => {
     const res = await BlogService.refresh();
     if(res.status === 200) {
-        console.log({res});
         dispatch(setAuth(res.data.user.isAdmin));
         localStorage.setItem("token", res.data.accesToken)
     } else {
@@ -47,6 +46,10 @@ export const refresh = () => async (dispatch) => {
 export const setAuth = (isAdmin) => ({
     type: "SET_AUTH",
     payload: isAdmin
+})
+
+export const setUnAuth = () => ({
+    type: "SET_UN_AUTH"
 })
 
 export const showErrors = (error) => ({

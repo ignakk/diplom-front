@@ -1,12 +1,20 @@
 import api from "../http";
 
 class BlogService {
-    async showAllArticles(page, filters) {
-        return api.get(`/article?page=${page}&orderBy=${filters.order}&filterBy=${filters.filter}`);
+    async showAllArticles(page, filters = '') {
+        return api.get(`/article?page=${page}&orderBy=${filters?.order || ''}&filterBy=${filters?.filter || ''}`);
     }
 
-    async showArticlestoModerate() {
-        return api.get('/articles-to-moderate');
+    async showArticlestoModerate(page) {
+        return api.get('/articles-to-moderate?page=' + page);
+    }
+
+    async publicArticle(id) {
+        return api.post('/article-approve', {id});
+    }
+
+    async declineArticle(id) {
+        return api.post('/decline-article', {id});
     }
 
     async create(title, text, avatar) {

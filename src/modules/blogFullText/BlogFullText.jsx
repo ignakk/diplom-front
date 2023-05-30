@@ -57,6 +57,7 @@ function BlogFullText() {
             <div
               style={{
                 background: `linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.5)), no-repeat center url(${avatar})`,
+                backgroundSize: 'cover',
               }}
               className="blog-fulltext__main">
               <h1 className="blog-fulltext__main-title">{title}</h1>

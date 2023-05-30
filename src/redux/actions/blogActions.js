@@ -2,7 +2,6 @@ import { BlogService } from "../../services";
 import { getArticleByIdErorr } from "./errorActions.js";
 
 export const getAllArticles = (page, filters) => async (dispatch) => {
-    console.log(page, filters)
     const res = await BlogService.showAllArticles(page, filters);
     dispatch(setAllArticles(res.data))
 }
@@ -74,17 +73,12 @@ export const deleteArtcileFront = (articleId) => ({
 export const createArticle = (title, text, avatar) => async (dispatch) => {
     const res = await BlogService.create(title, text, avatar);
     if(res.status === 200) {
-        alert("Статья успешно создана")
-        dispatch(createArticleFront(res.data))
+        alert("Статья успешно создана");
+        window.location.href = '/diplom';
     } else {
         alert("Упс чтото пошло нетак")
     }
 }
-
-export const createArticleFront = (articleData) => ({
-    type: "CREATE_ARTICLE",
-    payload: articleData
-})
 
 export const nextPage = (math) => ({
     type: "PAGINATION",

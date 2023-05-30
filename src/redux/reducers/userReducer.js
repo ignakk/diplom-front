@@ -12,7 +12,14 @@ const userReducer = (state = initialState, action) => {
                 isAdmin: action.payload,
                 isAuth: true
             }
-            break;
+        
+        case "SET_UN_AUTH":
+            return {
+                ...state,
+                isAuth: false,
+                isAdmin: false,
+                erorr: null
+            }
     
         case "SET_AUTH_ERROR":
             return {
@@ -21,7 +28,6 @@ const userReducer = (state = initialState, action) => {
             }
 
         default: return state;
-        break;
     }
 }
 
