@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const API_URL = `http://localhost:3333/api`;
+export const API_URL = `https://back-silk.vercel.app/api`;
 
 const api = axios.create({
     withCredentials: true,
