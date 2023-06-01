@@ -7,7 +7,6 @@ export const authorization = (email, password) => async (dispatch) => {
         if(res.status === 200) {
             dispatch(setAuth());
             dispatch(showErrors(null));
-            console.log({res});
             Cookies.set("refreshToken", res.data.refreshToken);
             window.location.href = "/diplom-front"
         } else {

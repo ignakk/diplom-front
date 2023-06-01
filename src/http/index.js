@@ -9,7 +9,6 @@ const api = axios.create({
 })
 
 api.interceptors.request.use((config) => {
-    console.log(Cookie.get('refreshToken'));
     config.headers.Authorization = `Bearer ${Cookie.get('refreshToken')}`
     return config;
 })
