@@ -74,7 +74,7 @@ export const createArticle = (title, text, avatar) => async (dispatch) => {
     const res = await BlogService.create(title, text, avatar);
     if(res.status === 200) {
         alert("Статья успешно создана");
-        window.location.href = '/diplom';
+        window.location.href = '/diplom-front';
     } else {
         alert("Упс чтото пошло нетак")
     }

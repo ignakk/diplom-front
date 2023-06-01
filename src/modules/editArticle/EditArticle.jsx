@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { getInfoBeforeChange } from '../../redux/actions/blogActions.js';
@@ -19,7 +19,7 @@ function EditArticle() {
 
   const dispatch = useDispatch();
 
-  const id = getIdByUrl(window.location.href);
+  const {id} = useParams();
 
   React.useEffect(() => {
     dispatch(getInfoBeforeChange(id));
@@ -107,7 +107,7 @@ function EditArticle() {
           className="article-edit__markdown-href"
           href="https://www.markdownguide.org/basic-syntax/#line-break-best-practices"
           alt="Подсказка markdown"
-          target="_blank">
+          target="_blank" rel="noreferrer">
           Можно здесь
         </a>
       </div>

@@ -7,7 +7,7 @@ export const authorization = (email, password) => async (dispatch) => {
             dispatch(setAuth());
             dispatch(showErrors(null));
             localStorage.setItem("token", res.data.accesToken);
-            window.location.href = "/"
+            window.location.href = "/diplom-front"
         } else {
             throw new Error("Произошла ошибка при авторизации");
         }
@@ -24,7 +24,7 @@ export const registration = (email, password) => async (dispatch) => {
             dispatch(setAuth());
             dispatch(showErrors(null));
             localStorage.setItem("token", res.data.accesToken);
-            window.location.href = "/auth"
+            window.location.href = "/diplom-front/auth"
         } else {
             throw new Error("Произошла ошибка при регистрации");
         }
