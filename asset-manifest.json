@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/diplom-front/static/css/main.76d039db.chunk.css",
-    "main.js": "/diplom-front/static/js/main.32bf7932.chunk.js",
-    "main.js.map": "/diplom-front/static/js/main.32bf7932.chunk.js.map",
+    "main.js": "/diplom-front/static/js/main.5d5ba4b5.chunk.js",
+    "main.js.map": "/diplom-front/static/js/main.5d5ba4b5.chunk.js.map",
     "runtime-main.js": "/diplom-front/static/js/runtime-main.2d9ff2eb.js",
     "runtime-main.js.map": "/diplom-front/static/js/runtime-main.2d9ff2eb.js.map",
     "static/js/2.680da2d3.chunk.js": "/diplom-front/static/js/2.680da2d3.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.2d9ff2eb.js",
     "static/js/2.680da2d3.chunk.js",
     "static/css/main.76d039db.chunk.css",
-    "static/js/main.32bf7932.chunk.js"
+    "static/js/main.5d5ba4b5.chunk.js"
   ]
 }
