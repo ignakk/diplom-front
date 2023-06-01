@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/diplom-front/static/css/main.76d039db.chunk.css",
+    "main.js": "/diplom-front/static/js/main.32bf7932.chunk.js",
+    "main.js.map": "/diplom-front/static/js/main.32bf7932.chunk.js.map",
+    "runtime-main.js": "/diplom-front/static/js/runtime-main.2d9ff2eb.js",
+    "runtime-main.js.map": "/diplom-front/static/js/runtime-main.2d9ff2eb.js.map",
+    "static/js/2.680da2d3.chunk.js": "/diplom-front/static/js/2.680da2d3.chunk.js",
+    "static/js/2.680da2d3.chunk.js.map": "/diplom-front/static/js/2.680da2d3.chunk.js.map",
+    "index.html": "/diplom-front/index.html",
+    "static/css/main.76d039db.chunk.css.map": "/diplom-front/static/css/main.76d039db.chunk.css.map",
+    "static/js/2.680da2d3.chunk.js.LICENSE.txt": "/diplom-front/static/js/2.680da2d3.chunk.js.LICENSE.txt",
+    "static/media/eye-icon.ed3ebf27.svg": "/diplom-front/static/media/eye-icon.ed3ebf27.svg",
+    "static/media/github-icon.91723b29.svg": "/diplom-front/static/media/github-icon.91723b29.svg",
+    "static/media/spinner.ac4a764b.gif": "/diplom-front/static/media/spinner.ac4a764b.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2d9ff2eb.js",
+    "static/js/2.680da2d3.chunk.js",
+    "static/css/main.76d039db.chunk.css",
+    "static/js/main.32bf7932.chunk.js"
+  ]
+}
