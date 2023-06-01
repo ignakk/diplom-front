@@ -1,5 +1,5 @@
 import axios from "axios";
-import Cookies from 'js-cookie';
+import Cookie from 'js-cookie';
 
 export const API_URL = `https://back-silk.vercel.app/api`;
 
@@ -9,7 +9,8 @@ const api = axios.create({
 })
 
 api.interceptors.request.use((config) => {
-    config.headers.Authorization = `Bearer ${Cookies.get('refreshToken')}`
+    console.log(Cookie.get('refreshToken'));
+    config.headers.Authorization = `Bearer ${Cookie.get('refreshToken')}`
     return config;
 })
 

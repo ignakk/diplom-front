@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, Route, Switch } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
+import Cookies from 'js-cookie';
 
 import { refresh } from "./redux/actions/userActions.js";
 
@@ -162,7 +163,7 @@ function App() {
   })
 
   React.useEffect(() => {
-    if(localStorage.getItem("token")) {
+    if(Cookies.get("refreshToken")) {
       dispatch(refresh());
     }
   }, []);

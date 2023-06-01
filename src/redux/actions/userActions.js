@@ -1,3 +1,4 @@
+import Cookies from "js-cookie";
 import { BlogService } from "../../services";
 
 export const authorization = (email, password) => async (dispatch) => {
@@ -6,7 +7,8 @@ export const authorization = (email, password) => async (dispatch) => {
         if(res.status === 200) {
             dispatch(setAuth());
             dispatch(showErrors(null));
-            localStorage.setItem("token", res.data.accesToken);
+            console.log({res});
+            Cookies.set("refreshToken", res.data.refreshToken);
             window.location.href = "/diplom-front"
         } else {
             throw new Error("Произошла ошибка при авторизации");
@@ -23,7 +25,7 @@ export const registration = (email, password) => async (dispatch) => {
         if(res.status === 200) {
             dispatch(setAuth());
             dispatch(showErrors(null));
-            localStorage.setItem("token", res.data.accesToken);
+            Cookies.set("refreshToken", res.data.refreshToken);
             window.location.href = "/diplom-front/auth"
         } else {
             throw new Error("Произошла ошибка при регистрации");
@@ -34,13 +36,19 @@ export const registration = (email, password) => async (dispatch) => {
 }
 
 export const refresh = () => async (dispatch) => {
-    const res = await BlogService.refresh();
-    if(res.status === 200) {
-        dispatch(setAuth(res.data.user.isAdmin));
-        localStorage.setItem("token", res.data.accesToken)
-    } else {
-        alert(res.data)
+    try {
+        const res = await BlogService.refresh();
+        if(res.status === 200) {
+            dispatch(setAuth(res.data.user.isAdmin));
+            Cookies.set("refreshToken", res.data.refreshToken);
+        } else {
+            alert(res.data)
+        }
+    } catch (error) {
+        Cookies.remove('refreshToken');
+        localStorage.removeItem('token');
     }
+  
 }
 
 export const setAuth = (isAdmin) => ({
