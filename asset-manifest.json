@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/diplom-front/static/css/main.071ed288.chunk.css",
-    "main.js": "/diplom-front/static/js/main.9c8f55b9.chunk.js",
-    "main.js.map": "/diplom-front/static/js/main.9c8f55b9.chunk.js.map",
+    "main.css": "/diplom-front/static/css/main.df2a09b3.chunk.css",
+    "main.js": "/diplom-front/static/js/main.bddb539a.chunk.js",
+    "main.js.map": "/diplom-front/static/js/main.bddb539a.chunk.js.map",
     "runtime-main.js": "/diplom-front/static/js/runtime-main.2d9ff2eb.js",
     "runtime-main.js.map": "/diplom-front/static/js/runtime-main.2d9ff2eb.js.map",
-    "static/js/2.de16dedb.chunk.js": "/diplom-front/static/js/2.de16dedb.chunk.js",
-    "static/js/2.de16dedb.chunk.js.map": "/diplom-front/static/js/2.de16dedb.chunk.js.map",
+    "static/js/2.f6daaceb.chunk.js": "/diplom-front/static/js/2.f6daaceb.chunk.js",
+    "static/js/2.f6daaceb.chunk.js.map": "/diplom-front/static/js/2.f6daaceb.chunk.js.map",
     "index.html": "/diplom-front/index.html",
-    "static/css/main.071ed288.chunk.css.map": "/diplom-front/static/css/main.071ed288.chunk.css.map",
-    "static/js/2.de16dedb.chunk.js.LICENSE.txt": "/diplom-front/static/js/2.de16dedb.chunk.js.LICENSE.txt",
-    "static/media/eye-icon.ed3ebf27.svg": "/diplom-front/static/media/eye-icon.ed3ebf27.svg",
-    "static/media/github-icon.91723b29.svg": "/diplom-front/static/media/github-icon.91723b29.svg",
+    "static/css/main.df2a09b3.chunk.css.map": "/diplom-front/static/css/main.df2a09b3.chunk.css.map",
+    "static/js/2.f6daaceb.chunk.js.LICENSE.txt": "/diplom-front/static/js/2.f6daaceb.chunk.js.LICENSE.txt",
+    "static/media/eye-icon.7798309a.svg": "/diplom-front/static/media/eye-icon.7798309a.svg",
+    "static/media/github-icon.04ac3230.svg": "/diplom-front/static/media/github-icon.04ac3230.svg",
     "static/media/spinner.ac4a764b.gif": "/diplom-front/static/media/spinner.ac4a764b.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.2d9ff2eb.js",
-    "static/js/2.de16dedb.chunk.js",
-    "static/css/main.071ed288.chunk.css",
-    "static/js/main.9c8f55b9.chunk.js"
+    "static/js/2.f6daaceb.chunk.js",
+    "static/css/main.df2a09b3.chunk.css",
+    "static/js/main.bddb539a.chunk.js"
   ]
 }
