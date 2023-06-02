@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/diplom-front/static/css/main.d10703f6.chunk.css",
+    "main.css": "/diplom-front/static/css/main.2c3ab2a3.chunk.css",
     "main.js": "/diplom-front/static/js/main.bddb539a.chunk.js",
     "main.js.map": "/diplom-front/static/js/main.bddb539a.chunk.js.map",
     "runtime-main.js": "/diplom-front/static/js/runtime-main.2d9ff2eb.js",
@@ -8,7 +8,7 @@
     "static/js/2.f6daaceb.chunk.js": "/diplom-front/static/js/2.f6daaceb.chunk.js",
     "static/js/2.f6daaceb.chunk.js.map": "/diplom-front/static/js/2.f6daaceb.chunk.js.map",
     "index.html": "/diplom-front/index.html",
-    "static/css/main.d10703f6.chunk.css.map": "/diplom-front/static/css/main.d10703f6.chunk.css.map",
+    "static/css/main.2c3ab2a3.chunk.css.map": "/diplom-front/static/css/main.2c3ab2a3.chunk.css.map",
     "static/js/2.f6daaceb.chunk.js.LICENSE.txt": "/diplom-front/static/js/2.f6daaceb.chunk.js.LICENSE.txt",
     "static/media/eye-icon.7798309a.svg": "/diplom-front/static/media/eye-icon.7798309a.svg",
     "static/media/github-icon.04ac3230.svg": "/diplom-front/static/media/github-icon.04ac3230.svg",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.2d9ff2eb.js",
     "static/js/2.f6daaceb.chunk.js",
-    "static/css/main.d10703f6.chunk.css",
+    "static/css/main.2c3ab2a3.chunk.css",
     "static/js/main.bddb539a.chunk.js"
   ]
 }
