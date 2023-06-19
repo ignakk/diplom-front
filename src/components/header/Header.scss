@@ -5,6 +5,7 @@
 
   &__inner {
     & {
+      padding: 0 10px;
       display: flex;
       justify-content: space-between;
     }
@@ -35,7 +36,7 @@
   .header-wrap {
     & {
       div {
-        margin-left: 20px;
+        margin-right: 20px;
       }
     }
   }
