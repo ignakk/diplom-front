@@ -11,6 +11,16 @@
     }
   }
 
+  @media (max-width: 550px) {
+    & {
+      max-width: 330px;
+    }
+
+    &__avatar {
+      width: auto;
+    }
+  }
+
   a {
     text-decoration: none;
   }
@@ -48,7 +58,8 @@
     height: 300px;
     
     img {
-      width: 500px;
+      object-fit: cover;
+      width: 100%;
       height: 300px;
       border-radius: 10px 10px 0px 0px;
     }
