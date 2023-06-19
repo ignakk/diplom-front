@@ -27,6 +27,15 @@
     &__inner {
       flex-direction: column;
     }
+
+    &__inner a {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-wrap {
+      justify-content: center;
+    }
   }
 
   a {

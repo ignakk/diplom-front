@@ -48,15 +48,13 @@ function BlogFullText() {
 
   return (
     <div className="blog-fulltext">
-      {(!isVisible && !isAdmin) && <NotFound />}
-      {isVisible && <>
       {article && isLoaded === false && Object.values(error).length < 1 ? (
         <div className="blog-fulltext__loading">
           <img src={spinner} />
         </div>
       ) : Object.values(error).length > 0 ? (
         <NotFound />
-      ) : (
+      ) : (!isVisible && !isAdmin) ? <NotFound /> : (
         <div className="blog-fulltext__wrapper">
           {avatar ? (
             <div
@@ -111,7 +109,6 @@ function BlogFullText() {
           </div>
         </div>
       )}
-      </>}
     </div>
   );
 }
