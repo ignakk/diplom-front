@@ -16,7 +16,7 @@ import { useRef } from 'react';
 const LOCAL_STORAGE_FILTERS_KEY = 'filters';
 
 function BlogWrapper({ isAuth }) {
-  const [filters, setFilters] = useState(...{...JSON.parse(localStorage.getItem(LOCAL_STORAGE_FILTERS_KEY)), filter: ''} || {
+  const [filters, setFilters] = useState({...JSON.parse(localStorage.getItem(LOCAL_STORAGE_FILTERS_KEY)), filter: ''} || {
     order: 'desc',
     filter: ''
   });
