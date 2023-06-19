@@ -17,7 +17,11 @@
     }
 
     &__avatar {
-      width: auto;
+      width: auto !important;
+    }
+
+    &__avatar-noavatar {
+      width: auto !important;
     }
   }
 

@@ -22,6 +22,12 @@
     }
   }
 
+  @media (max-width: 720px) {
+    &__inner {
+      flex-direction: column;
+    }
+  }
+
   a {
     text-decoration: none;
   }
