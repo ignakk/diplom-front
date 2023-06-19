@@ -93,6 +93,7 @@ function ArticlesToModerate() {
           {articlesToModerate && articlesToModerate.length > 0 && !isLoading && !erorr ? (
             articlesToModerate.map((article) => (
               <div className="article">
+              <Link to={`/articles/${article._id}`}>
                 <div className="article__avatar">
                   {article.avatar ? (
                     <img src={article.avatar} alt="Фоновая картинка" />
@@ -100,6 +101,7 @@ function ArticlesToModerate() {
                     <div className="article__avatar-noavatar">{article.title}</div>
                   )}
                 </div>
+                </Link>
               <div className="article__wrapper">
                 <div className="article__content">
                     <div className="article__content-title">{article.title}</div>
