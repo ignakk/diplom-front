@@ -17,7 +17,7 @@ const LOCAL_STORAGE_FILTERS_KEY = 'filters';
 
 function BlogWrapper({ isAuth }) {
   const [filters, setFilters] = useState(JSON.parse(localStorage.getItem(LOCAL_STORAGE_FILTERS_KEY)) || {
-    order: 'asc',
+    order: 'desc',
     filter: ''
   });
 
