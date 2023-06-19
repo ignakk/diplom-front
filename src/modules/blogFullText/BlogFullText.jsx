@@ -28,7 +28,9 @@ function BlogFullText() {
     dispatch(getArticleById(id));
   }, [id]);
 
-  const { title, text, updatedAt, avatar, article, isLoaded, error, viewsCount } = useSelector(
+  const isAdmin = useSelector((state) => state.userReducer.isAdmin);
+
+  const { title, text, updatedAt, avatar, article, isLoaded, error, isVisible, viewsCount } = useSelector(
     (state) => {
       return {
         title: state.blogReducer.currentArticle.article.title,
@@ -38,6 +40,7 @@ function BlogFullText() {
         article: state.blogReducer.currentArticle.article,
         isLoaded: state.blogReducer.currentArticle.isLoaded,
         viewsCount: state.blogReducer.currentArticle.article.viewsCount,
+        isVisible: state.blogReducer.currentArticle.article.isVisible,
         error: state.errorReducer.error,
       };
     },
@@ -45,6 +48,8 @@ function BlogFullText() {
 
   return (
     <div className="blog-fulltext">
+      {(!isVisible && !isAdmin) && <NotFound />}
+      {isVisible && <>
       {article && isLoaded === false && Object.values(error).length < 1 ? (
         <div className="blog-fulltext__loading">
           <img src={spinner} />
@@ -106,6 +111,7 @@ function BlogFullText() {
           </div>
         </div>
       )}
+      </>}
     </div>
   );
 }
