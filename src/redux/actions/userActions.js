@@ -25,7 +25,7 @@ export const registration = (email, password) => async (dispatch) => {
             dispatch(setAuth());
             dispatch(showErrors(null));
             Cookies.set("refreshToken", res.data.refreshToken);
-            window.location.href = "/diplom-front/auth"
+            window.location.href = "/diplom-front/#/auth"
         } else {
             throw new Error("Произошла ошибка при регистрации");
         }
