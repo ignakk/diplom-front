@@ -96,22 +96,6 @@ function BlogWrapper({ isAuth }) {
         )}
       </div>
       <div style={{marginBottom: '150px'}} className="blog-pagination">
-        <div className="blog-wrapper__loadmorebtn">
-          {page === 1 ? (
-            <div></div>
-          ) : (
-            <Button onClick={() => PaginationFunc()} className="blog-wrapper__loadmorebtn-btn">
-              Предыдущая страница
-            </Button>
-          )}
-          {articles.length < 8 ? null : (
-            <Button
-              onClick={() => PaginationFunc('plus')}
-              className="blog-wrapper__loadmorebtn-btn">
-              Следующая страница
-            </Button>
-          )}
-        </div>
       </div>
     </div>
   );
