@@ -71,7 +71,7 @@ function BlogWrapper({ isAuth }) {
 
         <div style={{fontSize: '18px', color: '#fff', fontWeight: 'bold', marginBottom: '15px'}}>Фильтры:</div>
          <div style={{display: 'flex',alignItems: 'center'}}>
-          <Filter onChange={(e) => setFiltersValue('order', e.target.value)} data={[{id: 1, label: 'сначала старые', value: 'desc'}, {id: 2, label: 'сначала новые', value: 'asc'}]} />
+          <Filter onChange={(e) => setFiltersValue('order', e.target.value)} data={[{id: 1, label: 'сначала новые', value: 'desc'}, {id: 2, label: 'сначала старые', value: 'asc'}]} />
           <Searchbar controlled value={filters.filter} onChange={(value) => setFiltersValue('filter', value)} />
         </div>
 
