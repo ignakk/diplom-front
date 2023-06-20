@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/diplom-front/static/css/main.7c020a48.chunk.css",
+    "main.css": "/diplom-front/static/css/main.3603811c.chunk.css",
     "main.js": "/diplom-front/static/js/main.f0a469f2.chunk.js",
     "main.js.map": "/diplom-front/static/js/main.f0a469f2.chunk.js.map",
     "runtime-main.js": "/diplom-front/static/js/runtime-main.9e34cc71.js",
@@ -8,7 +8,7 @@
     "static/js/2.426cca09.chunk.js": "/diplom-front/static/js/2.426cca09.chunk.js",
     "static/js/2.426cca09.chunk.js.map": "/diplom-front/static/js/2.426cca09.chunk.js.map",
     "index.html": "/diplom-front/index.html",
-    "static/css/main.7c020a48.chunk.css.map": "/diplom-front/static/css/main.7c020a48.chunk.css.map",
+    "static/css/main.3603811c.chunk.css.map": "/diplom-front/static/css/main.3603811c.chunk.css.map",
     "static/js/2.426cca09.chunk.js.LICENSE.txt": "/diplom-front/static/js/2.426cca09.chunk.js.LICENSE.txt",
     "static/media/eye-icon.ed3ebf27.svg": "/diplom-front/static/media/eye-icon.ed3ebf27.svg",
     "static/media/github-icon.91723b29.svg": "/diplom-front/static/media/github-icon.91723b29.svg",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.9e34cc71.js",
     "static/js/2.426cca09.chunk.js",
-    "static/css/main.7c020a48.chunk.css",
+    "static/css/main.3603811c.chunk.css",
     "static/js/main.f0a469f2.chunk.js"
   ]
 }
